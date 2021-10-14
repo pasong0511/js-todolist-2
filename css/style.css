@@ -1,0 +1,97 @@
+.compeletedItem{
+    text-decoration: line-through;
+}
+
+body, html{
+    background-color: #E9ECEF;
+    font-family: 'Gowun Dodum', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#TodoTemplate{
+    width: 500px;
+    position: relative;
+    top: 100px;
+}
+
+#MainTitle{
+    background-color: #22b8cf;
+    height: 4rem;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#InsertForm{
+    background-color: #495057;
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+}
+
+
+#InsertForm input{
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 10px;
+}
+
+#InsertForm input::placeholder{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#InsertForm button{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.125rem;
+    background: #868e96;
+    color: #fff;
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+#TodoListView{
+    list-style:none;
+    padding-left:0px;
+    padding: 0px;
+    margin: 0px;
+    height: 480px; 
+    overflow: auto;
+}
+
+
+#TodoListView li{
+    padding : 5px 20px;
+    font-size: 1.5rem;
+}
+
+.TodoListItem-virtualized{
+    height: 50px;
+    border-bottom: 1px solid #E9ECEF;
+    padding-left:0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TodoListItem-virtualized:nth-child(odd){
+    background: #F8F9FA;
+}
+.TodoListItem-virtualized:nth-child(even){
+    background: #fff;
+}
+
+ul li span svg{
+    color: #ff6b6b;
+}
